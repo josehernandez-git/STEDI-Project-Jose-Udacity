@@ -18,8 +18,8 @@ spark = glueContext.spark_session
 job = Job(glueContext)
 job.init(args['JOB_NAME'], args)
 
-# Script generated for node Accelerometer Landing Zone
-AccelerometerLandingZone_node1769970544798 = glueContext.create_dynamic_frame.from_options(format_options={"multiLine": "false"}, connection_type="s3", format="json", connection_options={"paths": ["s3://jose-501/accelerometer/landing/"], "recurse": True}, transformation_ctx="AccelerometerLandingZone_node1769970544798")
+# Script generated for node Accelerometer Trusted Zone
+AccelerometerLandingZone_node1769970544798 = glueContext.create_dynamic_frame.from_options(format_options={"multiLine": "false"}, connection_type="s3", format="json", connection_options={"paths": ["s3://jose-501/accelerometer/trusted/"], "recurse": True}, transformation_ctx="AccelerometerLandingZone_node1769970544798")
 
 # Script generated for node Customers Trusted Zone
 CustomersTrustedZone_node1769970481422 = glueContext.create_dynamic_frame.from_options(format_options={"multiLine": "false"}, connection_type="s3", format="json", connection_options={"paths": ["s3://jose-501/customer/trusted/"], "recurse": True}, transformation_ctx="CustomersTrustedZone_node1769970481422")
