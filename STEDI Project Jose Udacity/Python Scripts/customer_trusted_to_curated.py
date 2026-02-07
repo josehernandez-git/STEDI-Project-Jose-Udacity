@@ -28,7 +28,7 @@ CustomersTrustedZone_node1769970481422 = glueContext.create_dynamic_frame.from_o
 SqlQuery2451 = '''
 select distinct customer_trusted.*
 from customer_trusted
-  join accelerometer_landing on accelerometer_landing.user = customer_trusted.email;
+  join accelerometer_trusted on accelerometer_trusted.user = customer_trusted.email;
 '''
 SQLQuery_node1769970608891 = sparkSqlQuery(glueContext, query = SqlQuery2451, mapping = {"accelerometer_landing":AccelerometerLandingZone_node1769970544798, "customer_trusted":CustomersTrustedZone_node1769970481422}, transformation_ctx = "SQLQuery_node1769970608891")
 
