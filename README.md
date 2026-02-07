@@ -1,6 +1,7 @@
 # STEDI-Project-Jose-Udacity
 Files for my submission for Udacity Project
 
+I used my work places AWS account for this project to be able to show them me gaining experience with Glue jobs and Athena tables. Since they are paying for my WGU degree I can show my school and workplace my milestones and the skills I obtain.
 
 My repo contains 4 folders which are:
 - Python Scripts
