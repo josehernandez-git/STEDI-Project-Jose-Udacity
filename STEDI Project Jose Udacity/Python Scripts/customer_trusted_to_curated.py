@@ -30,7 +30,7 @@ select distinct customer_trusted.*
 from customer_trusted
   join accelerometer_trusted on accelerometer_trusted.user = customer_trusted.email;
 '''
-SQLQuery_node1769970608891 = sparkSqlQuery(glueContext, query = SqlQuery2451, mapping = {"accelerometer_landing":AccelerometerLandingZone_node1769970544798, "customer_trusted":CustomersTrustedZone_node1769970481422}, transformation_ctx = "SQLQuery_node1769970608891")
+SQLQuery_node1769970608891 = sparkSqlQuery(glueContext, query = SqlQuery2451, mapping = {"accelerometer_trusted":AccelerometerLandingZone_node1769970544798, "customer_trusted":CustomersTrustedZone_node1769970481422}, transformation_ctx = "SQLQuery_node1769970608891")
 
 # Script generated for node Customer Curated
 CustomerCurated_node1769971246041 = glueContext.getSink(path="s3://jose-501/customer/curated/", connection_type="s3", updateBehavior="UPDATE_IN_DATABASE", partitionKeys=[], enableUpdateCatalog=True, transformation_ctx="CustomerCurated_node1769971246041")
